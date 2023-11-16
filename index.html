@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="icon" href="./assets/img/IMG-2022021Protr.png" />
 </head>
-
+<style>
+    .services__modal-item .bx{
+        line-height: 3;
+    }
+</style>
 <body>
     <!-------------- Header ----------------->
-
+    <div id="preloader"></div>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Atish Portfolio</a>
@@ -75,7 +79,7 @@
                         </div>
                 </div>
                 <div class="home__handle">
-                    <img src="./assets/img/IMG-2022021Protr.png" alt="Atish Kumar" class='home__img'>
+                    <img src="./assets/img/PORTFOLIO.png" alt="Atish Kumar" class='home__img'>
                 </div>
                 <div class="home__social">
                     <a href="https://github.com/AtishKumar98" class="home__social__links"><i class='bx bxl-github'></i></a>
@@ -114,10 +118,10 @@
                     </div>
                     <hr>
                     <p class="about__description"><b>Full Stack Developer.</b>
-                        <br><b>Backend Priority</b>: Django(Python) As it is considered as no. 1 Backend.
-                        <br><b>Frontend Priority</b>: HTML5, CSS:Bootstrap and Tailwind/Tailblock CSS, JS:Jquery & AJAX.
-                        <br><b>Database Priority</b>: Sqlite3 which is Default for Django & Postgres SQL.
-                        <br><b>Server Priority</b>: AWS, Heroku,Pythonanywhere, Digital Ocean.
+                        <br><b>Backend</b>: Django Web Framework.
+                        <br><b>Frontend</b>: HTML5, Bootstrap and Tailwind, JS,Jquery & AJAX.
+                        <br><b>Database</b>: PostgreSQL, MySQL.
+                        <br><b>Server/Cloud</b>: AWS(EC2, RDS, S3, Docker,Nginx)
                     
                         <hr>
                     <a href="#contact" class="button"> Contact Me</a>
@@ -214,7 +218,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
 
-                                    <h3 class="skills__name">Django</h3>
+                                    <h3 class="skills__name">Django Web Framework</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -222,7 +226,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
 
-                                    <h3 class="skills__name">Pandas, Numpy </h3>
+                                    <h3 class="skills__name">Docker </h3>
                                     <span class="skills__level">Basic</span>
                                 </div>
                             </div>
@@ -238,7 +242,7 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
 
-                                    <h3 class="skills__name">MySql</h3>
+                                    <h3 class="skills__name">SQL</h3>
                                     <span class="skills__level">Advanced</span>
                                 </div>
                             </div>
@@ -249,16 +253,16 @@
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
 
-                                    <h3 class="skills__name">IIS</h3>
-                                    <span class="skills__level">Advanced</span>
+                                    <h3 class="skills__name">AWS</h3>
+                                    <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
                             <div class="skills__data">
                                 <i class='bx bxs-badge-check'></i>
                                 <div>
 
-                                    <h3 class="skills__name">SSM Studio</h3>
-                                    <span class="skills__level">Advanced</span>
+                                    <h3 class="skills__name">Nginx</h3>
+                                    <span class="skills__level">Intermediate</span>
                                 </div>
                             </div>
                             <div class="skills__data">
@@ -293,15 +297,15 @@
                 
                 <span class="work__item active-work" data-filter = 'all'>All</span>
                 <span class="work__item" data-filter = '.ecomm'>Ecomm</span>
-                <span class="work__item" data-filter = '.management'>Management </span>
-                <span class="work__item" data-filter = '.ai'>A.I.</span>
+                <span class="work__item" data-filter = '.management'>Management</span>
+                <span class="work__item" data-filter = '.ai'>Landing Pages</span>
                 
             </div>
                 
                 <div class="work__container container grid">
 
                     <div class="work__card mix ecomm">
-                        <img src="assets/img/home-1.jpg" alt="" class="work__img">
+                        <img src="assets/img/home.png" alt="" class="work__img">
                         <h3 class="work__title">E-comm</h3>
                         <a href="https://rcplive.onrender.com/" class="work__button">
                             Demo <i class='bx bx-right-arrow-alt work__icon'></i>
@@ -314,11 +318,11 @@
                             Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                         </a>
                     </div>
-                    <div class="work__card mix social">
-                        <img src="assets/img/Social.png" alt="" class="work__img">
-                        <h3 class="work__title">Social Media (Present in Ecomm as well)</h3>
-                        <a href="https://rcplive.onrender.com/" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon'></i>
+                    <div class="work__card mix ai">
+                        <img src="assets/img/admissiontissedu.png" alt="" class="work__img">
+                        <h3 class="work__title">Admission TISS Landing Page</h3>
+                        <a href="https://admissions.tiss.edu/" class="work__button">
+                            View <i class='bx bx-right-arrow-alt work__icon'></i>
                         </a>
                     </div>
                     <div class="work__card mix social">
@@ -328,32 +332,39 @@
                             Demo <i class='bx bx-right-arrow-alt work__icon'></i>
                         </a>
                     </div>
-                    <div class="work__card mix management">
-                        <img src="assets/img/hotel.jpg" alt="" class="work__img">
-                        <h3 class="work__title">Restaurant Management</h3>
-                        <a download href="./assets/img/Restaurant Management System.rar"  class="work__button">
-                            Download <i class='bx bx-down-arrow-alt work__icon_download'></i>
+                    <div class="work__card mix ai">
+                        <img src="assets/img/vbblegal.png" alt="" class="work__img">
+                        <h3 class="work__title">VBB Legal</h3>
+                        <a href="https://vbblegal.in/"  class="work__button">
+                            View <i class='bx bx-down-arrow-alt work__icon_download'></i>
                         </a>
                     </div>
-                    <div class="work__card mix management">
-                        <img src="assets/img/worldmart.jpg" alt="" class="work__img">
-                        <h3 class="work__title">Shop Management</h3>
+                    <div class="work__card mix ai">
+                        <img src="assets/img/wordpress.png" alt="" class="work__img">
+                        <h3 class="work__title">Wordpress Website</h3>
                         <a download href="./assets/img/Billing System.zip"  class="work__button">
                             Download <i class='bx bx-down-arrow-alt work__icon_download'></i>
                         </a>
                     </div>
-                    <div class="work__card mix management">
+                    <div class="work__card mix ecomm">
                         <img src="assets/img/api_screen.png" alt="" class="work__img">
                         <h3 class="work__title">Product API</h3>
                         <a href="https://rcplive.onrender.com/api/product/" class="work__button">
-                            Demo <i class='bx bx-right-arrow-alt work__icon_download'></i>
+                            View <i class='bx bx-right-arrow-alt work__icon_download'></i>
                         </a>
                     </div>
                     <div class="work__card mix ai">
-                        <img src="assets/img/ai.jpg" alt="" class="work__img">
-                        <h3 class="work__title">Virtual Assistant</h3>
-                        <a download href="./assets/img/JARVIS.exe" class="work__button">
-                            Download <i class='bx bx-down-arrow-alt work__icon_download'></i>
+                        <img src="assets/img/international.png" alt="" class="work__img">
+                        <h3 class="work__title">TISS (Tata Institute of Social Sciences)</h3>
+                        <a href="https://www.tiss.edu/" class="work__button">
+                            View <i class='bx bx-down-arrow-alt work__icon_download'></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix management">
+                        <img src="assets/img/sms.png" alt="" class="work__img">
+                        <h3 class="work__title">Student Managment System TISS (Tata Institute of Social Sciences)</h3>
+                        <a href="https://stud-mgmt.tiss.edu/" class="work__button">
+                            View <i class='bx bx-down-arrow-alt work__icon_download'></i>
                         </a>
                     </div>
 
@@ -393,6 +404,45 @@
                             <i class='bx bx-check services__modal-icon'></i>
                             <p class="services__modal-info">
                              Creating Login/Register Websites with Appropriate User Roles.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="services__card">
+            <h3 class="services__title">Landing Page <br> Development </h3>
+            <span class="services__button">See more<i class='bx bx-right-arrow-alt services__icon' ></i></span>
+            <div class="services__modal">
+                <div class="services__modal-content">
+                    <i class='bx bx-x services__modal-close' ></i>
+                    <h3 class="services__modal-title">Landing Page Development</h3>
+                    <p class="services__modal-description">
+                        Development of Landing Pages.
+                    </p>
+                    <ul class="services__modal-list">
+                        <li class="services__modal-item">
+                            <i class='bx bx-check services__modal-icon'></i>
+                            <p class="services__modal-info">
+                                Development of Landing Pages as pe Design.
+                            </p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class='bx bx-check services__modal-icon'></i>
+                            <p class="services__modal-info">
+                                Responsive in any screen.
+                            </p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class='bx bx-check services__modal-icon'></i>
+                            <p class="services__modal-info">
+                               Satisfactory to Client.
+                            </p>
+                        </li>
+                        <li class="services__modal-item">
+                            <i class='bx bx-check services__modal-icon'></i>
+                            <p class="services__modal-info">
+                             Best Commitment to the Client as per Requirement.
                             </p>
                         </li>
                     </ul>
@@ -453,7 +503,7 @@
                         <li class="services__modal-item">
                             <i class='bx bx-check services__modal-icon'></i>
                             <p class="services__modal-info">
-                                I Develop the User Interface For Chatting.
+                                Development of User Interface For Chatting.
                             </p>
                         </li>
                         <li class="services__modal-item">
@@ -465,7 +515,7 @@
                         <li class="services__modal-item">
                             <i class='bx bx-check services__modal-icon'></i>
                             <p class="services__modal-info">
-                             Chatting according to user-Logged in   
+                             Chatting according to user-Logged in and in Real-Time 
                             </p>
                         </li>
                         <li class="services__modal-item">
@@ -582,6 +632,14 @@ function sendEmail(){
     message=>alert(message)
     );
     </script>
+<script>
+    var loader = document.getElementById('preloader')
+    window.addEventListener("load",function(){
+        loader.style.display= "none"
+    })
+</script>
+
 </body>
+
 
 </html>
